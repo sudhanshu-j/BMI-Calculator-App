@@ -1,0 +1,357 @@
+/* Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Generic Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #060606;
+}
+
+/* Box  */
+
+.box {
+  width: 500px;
+  background: #3a506b;
+  border-radius: 12px;
+  text-align: center;
+}
+
+h1 {
+  color: rgba(0, 0, 0, 0.879);
+  font-weight: bold;
+  font-size: 36px;
+  padding: 30px 0;
+}
+
+.content {
+  padding: 0 30px;
+}
+
+/* inputs Section */
+
+.input {
+  background: #5bc0be;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.text-input {
+  background-color: #5bc0be;
+}
+
+.input label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.input input {
+  outline: none;
+  border: none;
+  border-bottom: 1.5px solid #0a2342;
+  width: 50%;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Weight Section */
+
+.weight-input {
+  background: #2ca58d;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+#weight {
+  background: #2ca58d;
+}
+
+.weight-input label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.weight-input input {
+  outline: none;
+  border: none;
+  border-bottom: 1.5px solid #0a2342;
+  width: 50%;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Height Section */
+
+.hight-input {
+  background: #2ca58d;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+#height {
+  background: #2ca58d;
+}
+
+.hight-input label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.hight-input input {
+  outline: none;
+  border: none;
+  border-bottom: 1.5px solid #0a2342;
+  width: 50%;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Calc Button */
+
+button.calculate {
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  background: #8da9c4;
+  font-size: 16px;
+  border-radius: 7px;
+  padding: 12px 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  transition: all 0.5s;
+}
+
+button.calculate:hover {
+  background: #597c9e;
+}
+
+/* Result Section */
+
+.result {
+  padding: 10px 20px;
+}
+
+.result p {
+  font-weight: 600;
+  font-size: 22px;
+  color: #181818;
+  margin-bottom: 15px;
+}
+
+.result #result {
+  font-size: 36px;
+  font-weight: 900;
+  color: #0b2545;
+  background-color: #c6c2c2;
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 55px;
+  margin-bottom: 25px;
+}
+
+#comment {
+  color: #498c8a;
+  font-weight: 800;
+}
+
+.comment {
+  display: none;
+  border: dotted 1.7px;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+/* Gender Section */
+
+.gender {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background: #2f9c95;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+/* Radio */
+
+.gender .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 7px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hiding the browser's default radio button */
+.gender .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/*custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, adding background color */
+.gender .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When button is checked, adding background */
+.gender .container input:checked ~ .checkmark {
+  background-color: #42f2f7;
+}
+
+/* Create the indicator */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator when checked */
+.gender .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Styling the indicator */
+.gender .container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+/* END Style for Radio */
+
+.hight-weight-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* The Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-top: 300px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #969696;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 600px;
+  border-radius: 10px;
+}
+
+#modalText {
+  padding-top: 8px;
+  padding-right: 5px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #302f2f;
+}
+
+.modal-wrong {
+  border: 2px solid red;
+}
+
+.modal-correct {
+  border: 2px solid green;
+}
+
+/* The Close Button */
+.close {
+  color: #302f2f;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.close:hover {
+  color: #f24040;
+}
+
+@media (max-width: 700px) {
+  .box {
+    width: 380px;
+  }
+
+  .input label {
+    font-size: 18px;
+  }
+
+  .inputH label,
+  .inputW label {
+    font-size: 14px;
+  }
+
+  .input input,
+  .inputH input,
+  .inputW input {
+    font-size: 24px;
+  }
+
+  .modal-content {
+    width: 380px;
+  }
+}
