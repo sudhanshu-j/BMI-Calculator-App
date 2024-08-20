@@ -65,5 +65,8 @@ Technologies Used
     
     JavaScript: Handles the BMI calculation logic and dynamically updates the UI based on user input.
 
-Screenshot:-
+
+
+
+
     
