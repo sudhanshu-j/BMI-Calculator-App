@@ -93,7 +93,7 @@ This project is built with the following technologies:
    - Start by cloning the repository to your local machine:
    
    ```bash
-   git clone https://github.com/your-username/bmi-calculator.git
+   git clone https://github.com/sudhanshu-j/bmi-calculator.git
    ```
 
 2. **Open the `index.html` File**
